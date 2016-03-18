@@ -14,6 +14,7 @@
 		1049B85A1C97417B006B448B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1049B8581C97417B006B448B /* LaunchScreen.storyboard */; };
 		10603E9D1C9B31F00070E25F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603E9C1C9B31F00070E25F /* CustomTextField.swift */; };
 		10603E9F1C9B39C50070E25F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603E9E1C9B39C50070E25F /* CustomButton.swift */; };
+		10603EA51C9B66400070E25F /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10603EA41C9B66400070E25F /* AnimationEngine.swift */; };
 		E8E5A46F778F08E758AA3C2C /* Pods_BrainTeaser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1751E099B205A13BCC4828DB /* Pods_BrainTeaser.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		1049B8611C9749A6006B448B /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
 		10603E9C1C9B31F00070E25F /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		10603E9E1C9B39C50070E25F /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		10603EA41C9B66400070E25F /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
 		1751E099B205A13BCC4828DB /* Pods_BrainTeaser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainTeaser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F3B2C7F8EB3A8E45D4ADAC /* Pods-BrainTeaser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.release.xcconfig"; sourceTree = "<group>"; };
 		B2F797388378640B74D45378 /* Pods-BrainTeaser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTeaser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTeaser/Pods-BrainTeaser.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		1049B84E1C97417B006B448B /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
+				10603EA31C9B66370070E25F /* Util */,
 				10603E9B1C9B31CD0070E25F /* Controller */,
 				10603E9A1C9B31B60070E25F /* View */,
 				1049B84F1C97417B006B448B /* AppDelegate.swift */,
@@ -93,6 +96,14 @@
 				1049B8511C97417B006B448B /* LoginVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		10603EA31C9B66370070E25F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				10603EA41C9B66400070E25F /* AnimationEngine.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		386493E38F8E86E90944C43D /* Pods */ = {
@@ -237,6 +248,7 @@
 				10603E9F1C9B39C50070E25F /* CustomButton.swift in Sources */,
 				1049B8521C97417B006B448B /* LoginVC.swift in Sources */,
 				1049B8501C97417B006B448B /* AppDelegate.swift in Sources */,
+				10603EA51C9B66400070E25F /* AnimationEngine.swift in Sources */,
 				10603E9D1C9B31F00070E25F /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

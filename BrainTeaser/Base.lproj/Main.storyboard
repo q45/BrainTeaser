@@ -24,21 +24,6 @@
                                     <constraint firstAttribute="width" constant="443" id="Lw9-bT-lSJ"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wqv-aS-15h" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
-                                <rect key="frame" x="142" y="359" width="316" height="40"/>
-                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="316" id="9uy-zb-ZZh"/>
-                                    <constraint firstAttribute="height" constant="40" id="E65-fE-hrZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfz-m4-E4X" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
                                 <rect key="frame" x="142" y="414" width="316" height="40"/>
                                 <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,6 +55,24 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wqv-aS-15h" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="142" y="359" width="316" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="316" id="9uy-zb-ZZh"/>
+                                    <constraint firstAttribute="height" constant="40" id="E65-fE-hrZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -79,12 +82,18 @@
                             <constraint firstItem="hfz-m4-E4X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ohq-W5-VwN"/>
                             <constraint firstItem="A0B-dx-mmS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SJZ-01-8UQ"/>
                             <constraint firstItem="Wqv-aS-15h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SZZ-YC-yet"/>
+                            <constraint firstItem="hfz-m4-E4X" firstAttribute="top" secondItem="Wqv-aS-15h" secondAttribute="bottom" constant="15" id="aaN-VW-abn"/>
                             <constraint firstItem="hfz-m4-E4X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c4x-Zg-qyT"/>
                             <constraint firstItem="gUz-4B-mPt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ei4-xe-oUJ"/>
                             <constraint firstItem="A0B-dx-mmS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="j38-WG-aCW"/>
                             <constraint firstItem="hfz-m4-E4X" firstAttribute="top" secondItem="Wqv-aS-15h" secondAttribute="bottom" constant="15" id="uFd-7A-7Hc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailConstraint" destination="2Hj-Ku-zMw" id="RnO-uv-mwQ"/>
+                        <outlet property="loginConstraint" destination="ei4-xe-oUJ" id="V8I-8R-8AM"/>
+                        <outlet property="passwordConstraint" destination="Ohq-W5-VwN" id="wja-SB-P0d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
